@@ -4,3 +4,4 @@ ls.txt
 pwd.txt
 read.txt
 text.txt
+textcount.txt
