@@ -27,5 +27,11 @@ mount | head -n 5 > mount.txt
 echo "make a file called permissions.txt and give it rwx to all groups..."
 touch permissions.txt
 chmod 777 permissions.txt
+echo "create a shell variable called TESTENV1 and set it to “test...”"
+export TESTENV1="test"
+echo "run a grep command for all words in your text file with at least 3 letters, save to a file called regex.txt..."
+grep -o '\b[a-zA-Z]\{3,\}\b' text.txt > regex.txt
+echo "navigate up a level - back to the extra-credit directory..." 
+cd ..
 
 
