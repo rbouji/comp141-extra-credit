@@ -14,7 +14,18 @@ ls > ls.txt
 echo "make a copy of your text file into a third text file called copy.txt..."
 cp text.txt copy.txt
 echo "create an alias to print today’s date..."
-echo "alias today='date "+%Y-%m-%d"'" >> ~/.bashrc
-source ~/.bashrc
+alias today='date "+%Y-%m-%d"'
 today > date.txt
+echo "count the words in your text file into a file called textcount.txt..."
+wc -w text.txt > textcount.txt
+echo "save first five lines of a ps command as process.txt..."
+ps aux | head -n 5 > process.txt
+echo "save first five lines of ifconfig command as netstat.txt..."
+ifconfig | head -n 5 > netstat.txt
+echo "save first five lines of mount command as mount.txt..."
+mount | head -n 5 > mount.txt
+echo "make a file called permissions.txt and give it rwx to all groups..."
+touch permissions.txt
+chmod 777 permissions.txt
+
 
